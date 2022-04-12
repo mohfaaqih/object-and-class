@@ -1,0 +1,21 @@
+class main {
+  public static void main(String[] args) {
+    
+    int number = 90;
+    
+    System.out.print("Nilai Anda (A - E): " + '\n' + "A = 90-100 B = 80-89 C = 60-79");
+
+    if (number >= 90) {
+      System.out.println('\n' + "Your Grade is A");
+    }
+
+    else if (number >= 60) {
+      System.out.println('\n' + "Your Grade is B");
+    }
+    
+    // if both condition is false
+    else {
+      System.out.println('\n' + "Your Grade is C");
+    }
+  }
+}
