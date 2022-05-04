@@ -1,0 +1,26 @@
+//Creating a parent class.  
+class Bank{  
+int getRateOfInterest(){return 0;}  
+}  
+//Creating child classes.  
+class BSI extends Bank{  
+int getRateOfInterest(){return 8;}  
+}  
+  
+class MANDIRI extends Bank{  
+int getRateOfInterest(){return 9;}  
+}  
+class BCA extends Bank{  
+int getRateOfInterest(){return 7;}  
+}  
+//Test class to create objects and call the methods  
+class Test{  
+public static void main(String args[]){  
+BSI s=new BSI();  
+MANDIRI i=new MANDIRI();  
+BCA a=new BCA();  
+System.out.println("BSI Rate of Interest: "+s.getRateOfInterest() +"%");  
+System.out.println("MANDIRI Rate of Interest: "+i.getRateOfInterest() +"%");  
+System.out.println("BCA Rate of Interest: "+a.getRateOfInterest()+"%");  
+}  
+}  
