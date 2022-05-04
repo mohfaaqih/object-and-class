@@ -1,0 +1,18 @@
+//define class
+class Vehicle{  
+//declare methods
+void stop(){System.out.println("stop...");}  
+}  
+class Car extends Vehicle{  
+void drift(){System.out.println("drift...");}  
+}  
+class MiniCar extends Car{  
+void run(){System.out.println("running...");}  
+}  
+class Checkitup{  
+public static void main(String args[]){  
+MiniCar v=new MiniCar();  
+v.run();  
+v.stop();  
+v.drift();  
+}}  
