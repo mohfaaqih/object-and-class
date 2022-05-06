@@ -1,0 +1,29 @@
+class ATM {
+  public void ATMsystem() {
+    System.out.println("This atm machine can make money withdrawals and remittances");
+  }
+}
+
+class withdrawals extends ATM {
+  public void ATMsystem() {
+    System.out.println("Please insert the card and choose withdrawals cash");
+  }
+}
+
+class remittances extends ATM {
+  public void ATMsystem() {
+    System.out.println("Please insert the card and choose remittances");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    ATM runATM = new ATM();
+    ATM runwithdrawals = new withdrawals();
+    ATM runremittances = new remittances();
+        
+    runATM.ATMsystem();
+    runwithdrawals.ATMsystem();
+    runremittances.ATMsystem();
+  }
+}
